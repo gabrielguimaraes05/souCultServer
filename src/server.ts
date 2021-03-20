@@ -1,6 +1,8 @@
 import * as express from 'express';
 import * as cors from 'cors';
 
+import './database';
+
 import routes from './routes';
 
 const app = express();

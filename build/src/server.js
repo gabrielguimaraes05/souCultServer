@@ -2,10 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const cors = require("cors");
-// import routes from './routes';
+const routes_1 = require("./routes");
 const app = express();
 app.use(cors());
 app.use(express.json());
-// app.use(routes);
-app.listen(3333);
+app.use(routes_1.default);
+app.listen(3333, () => {
+    console.log('__Server started__');
+});
 //# sourceMappingURL=server.js.map
